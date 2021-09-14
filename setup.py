@@ -204,7 +204,7 @@ csc_libyuv_ENABLED      = DEFAULT and pkg_config_ok("--exists", "libyuv")
 example_ENABLED         = DEFAULT
 
 #Cython / gcc / packaging build options:
-docs_ENABLED            = DEFAULT
+docs_ENABLED            = False
 annotate_ENABLED        = DEFAULT
 warn_ENABLED            = True
 strict_ENABLED          = True
@@ -1909,7 +1909,7 @@ if client_ENABLED and gtk3_ENABLED:
     #cairo workaround:
     add_cython_ext("xpra.client.gtk3.cairo_workaround",
                 ["xpra/client/gtk3/cairo_workaround.pyx"],
-                **pkgconfig("py3cairo")
+                **pkgconfig("pycairo")
                 )
 
 if client_ENABLED or server_ENABLED:
