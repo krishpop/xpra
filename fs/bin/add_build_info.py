@@ -264,7 +264,7 @@ def record_build_info():
                 "nvenc",
                 "x11", "xrandr", "xtst", "xfixes", "xkbfile", "xcomposite", "xdamage", "xext",
                 "gobject-introspection-1.0",
-                "gtk+-3.0", "py3cairo", "pygobject-3.0", "gtk+-x11-3.0",
+                "gtk+-3.0", "pycairo", "pygobject-3.0", "gtk+-x11-3.0",
                 "python3",
                 ):
         #fugly magic for turning the package atom into a legal variable name:

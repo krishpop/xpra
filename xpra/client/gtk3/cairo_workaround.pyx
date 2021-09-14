@@ -59,7 +59,7 @@ cdef extern from "cairo/cairo.h":
     void cairo_surface_flush (cairo_surface_t *surface)
     void cairo_surface_mark_dirty (cairo_surface_t *surface)
 
-cdef extern from "pycairo/py3cairo.h":
+cdef extern from "pycairo/pycairo.h":
     ctypedef struct Pycairo_CAPI_t:
         pass
     ctypedef struct PycairoSurface:
